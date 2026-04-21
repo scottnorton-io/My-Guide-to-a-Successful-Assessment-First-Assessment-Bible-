@@ -245,6 +245,25 @@ Avoid absolutes. Prefer:
 - Lock scope package version for assessment start
 - Ensure every “must show” item has a retrieval path and owner
 
+``` mermaid
+gantt
+	title First Assessment 30/60/90 Plan (Execution Risk Compression)
+	dateFormat  YYYY-MM-DD
+	axisFormat  %b %d
+	section First 30 days: scope + evidence system
+	Scope package v1 (flows/diagrams/inventories/TPSPs) :a1, 2026-04-21, 30d
+	Evidence map v1 (Req → proof paths)                :a2, 2026-04-21, 30d
+	Evidence repository + naming standards             :a3, 2026-04-21, 14d
+	section Next 30 days: prove operation
+	Start recurring evidence (logs/scans/reviews)      :b1, after a1, 30d
+	Mock interviews + control spot-checks              :b2, after a2, 21d
+	Close report-blocking gaps                         :b3, after b2, 30d
+	section Final 30 days: compress execution risk
+	Dry run on hardest requirements                    :c1, after b3, 14d
+	Lock scope package version                         :c2, after c1, 3d
+	Readiness check: each must-show has owner + path   :c3, after c2, 7d
+```
+
 ---
 
 ## Appendix A — What “good” looks like (quick diagnostics)
