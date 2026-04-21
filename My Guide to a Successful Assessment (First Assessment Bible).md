@@ -265,6 +265,8 @@ gantt
 	title First Assessment 30/60/90 Plan (Execution Risk Compression)
 	dateFormat  YYYY-MM-DD
 	axisFormat  %b %d
+	section Pre-program
+	Preparation                                         :z1, 2026-03-21, 1m
 	section First 30 days: scope + evidence system
 	Scope package v1 (flows/diagrams/inventories/TPSPs) :a1, 2026-04-21, 30d
 	Evidence map v1 (Req → proof paths)                :a2, 2026-04-21, 30d
