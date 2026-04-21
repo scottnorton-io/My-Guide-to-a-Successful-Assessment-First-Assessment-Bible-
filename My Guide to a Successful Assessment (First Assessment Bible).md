@@ -64,6 +64,19 @@ A PCI assessment reliably follows this arc (even when people pretend it doesn’
 
 Your job is to pre-control each stage with artifacts and routines.
 
+``` mermaid
+flowchart TD
+	A[Kickoff] --> B["Scope discovery<br>(data flows, systems, boundaries)"]
+	B --> C["Evidence negotiation<br>(what counts, windows, sampling)"]
+	C --> D["Validation execution<br>(inquiry / observation / inspection / testing)"]
+	D --> E{Gaps found?}
+	E -- No --> F["Report defensibility<br>(bounded claims + traceable support)"]
+	E -- Yes --> G["Exception handling<br>(document gap + risk + plan)"]
+	G --> H[Remediation + retest evidence]
+	H --> D
+	F --> I[Closeout]
+```
+
 ---
 
 ## Non-negotiable operating rule: “Assessment-ready” means ready *before kickoff*
@@ -78,6 +91,26 @@ Your job is to pre-control each stage with artifacts and routines.
 ## Part 3 — The “Scope Bible” (your #1 success factor)
 
 Scope is not a statement. It’s an evidence chain.
+
+``` mermaid
+flowchart LR
+	subgraph Classification["Scope classification (use evidence, not opinion)"]
+		D["Account data inventory<br>(CHD + SAD + related)"] --> E[Data flows by channel + stage]
+		E --> F[Where stored / processed / transmitted?]
+		F --> G[System component inventory]
+		G --> H{Network path into CDE?}
+		H -- Yes --> I[Connected-to]
+		H -- No --> J{Can change security of CDE?}
+		J -- Yes --> K[Impacting]
+		J -- No --> L["Out of scope<br>(justify + retain proof)"]
+		G --> M{Is it in the CDE?}
+		M -- Yes --> N[CDE / ADE]
+		M -- No --> O[Non-CDE component]
+	end
+	O --> P{Third party involved?}
+	P -- Yes --> Q[TPSP + access/impact path<br>+ responsibilities]
+	P -- No --> R[First-party only]
+```
 
 ### 3.1 The minimum scope-confirmation checklist (non-negotiable)
 
