@@ -132,14 +132,14 @@ flowchart TB
 	R[PCI Requirement / sub-requirement] --> CO[Control objective]
 	CO --> CS["Control statement<br>(bounded, testable)"]
 	CS --> OW[Control owner]
-	CS --> SR[System(s) of record]
-	CS --> ET[Evidence type<br>(inquiry / observation / inspection / testing)]
-	CS --> TW[Time window<br>(coverage period)]
-	CS --> SA[Sampling approach<br>(population → sample → rationale)]
-	SR --> EP[Evidence production routine<br>(BAU cadence)]
-	EP --> EA[Evidence artifact(s)<br>(export / config dump / log report / ticket record)]
-	EA --> QC[Quality checks<br>(complete, attributable, time-bounded, prod)]
-	QC --> PKG[Evidence package<br>(named + organized + traceable)]
+	CS --> SR["System(s) of record"]
+	CS --> ET["Evidence type<br>(inquiry / observation / inspection / testing)"]
+	CS --> TW["Time window<br>(coverage period)"]
+	CS --> SA["Sampling approach<br>(population → sample → rationale)"]
+	SR --> EP["Evidence production routine<br>(BAU cadence)"]
+	EP --> EA["Evidence artifact(s)<br>(export / config dump / log report / ticket record)"]
+	EA --> QC["Quality checks<br>(complete, attributable, time-bounded, prod)"]
+	QC --> PKG["Evidence package<br>(named + organized + traceable)"]
 ```
 
 ### 4.2 Evidence rules (the ones that keep you defensible)
