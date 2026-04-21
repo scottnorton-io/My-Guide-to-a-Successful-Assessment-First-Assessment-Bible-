@@ -1,9 +1,7 @@
 # My Guide to a Successful Assessment (First Assessment Bible)
 
 <aside>
-🎯
-
-This guide is designed to make a PCI assessment feel like *showing your work*, not *scrambling to survive an audit*.
+🎯 This guide is designed to make a PCI assessment feel like *showing your work*, not *scrambling to survive an audit*.
 
 </aside>
 
